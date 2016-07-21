@@ -16,7 +16,7 @@
    * [Web 200 - Glob Secret Manager](web_200_-_glob_secret_manager.md)
 * [Crypto](crypto.md)
    * [Crypto 50 - Crypto Troll](crypto_50_-_crypto_troll.md)
-   * Crypto 50 - Simple XOR
+   * [Crypto 50 - Simple XOR](crypto_50_-_simple_xor.md)
 * [Misc](misc.md)
    * [Misc 50 - LOLCODE](misc_50_-_lolcode.md)
    * [Misc 50 - Digicode](misc_50_-_digicode.md)
