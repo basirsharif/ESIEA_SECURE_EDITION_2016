@@ -21,7 +21,7 @@
    * [Crypto 100 - Chain Reaction](crypto_100_-_chain_reaction.md)
    * [Crypto 150 - Weird Cipher](crypto_150_-_weird_cipher.md)
    * [Crypto 200 - Romain Small Arithmetic](crypto_200_-_romain_small_arithmetic.md)
-   * Crypto 250 - Magic Crypto Language
+   * [Crypto 250 - Magic Crypto Language](crypto_250_-_magic_crypto_language.md)
 * [Misc](misc.md)
    * [Misc 50 - LOLCODE](misc_50_-_lolcode.md)
    * [Misc 50 - Digicode](misc_50_-_digicode.md)
