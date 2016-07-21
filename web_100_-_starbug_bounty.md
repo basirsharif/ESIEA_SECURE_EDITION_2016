@@ -1,6 +1,5 @@
 # Web 100 - Starbug Bounty
 
-
 On détecte une simple injection SQL, il est donc possible de contourner l’authentification avec le
 payload suivant.
 > Username : ‘ or 1<2 --
