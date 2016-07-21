@@ -22,7 +22,7 @@
    * [Crypto 150 - Weird Cipher](crypto_150_-_weird_cipher.md)
    * [Crypto 200 - Romain Small Arithmetic](crypto_200_-_romain_small_arithmetic.md)
    * [Crypto 250 - Magic Crypto Language](crypto_250_-_magic_crypto_language.md)
-   * Crypto 300 - Broken Algorithm
+   * [Crypto 300 - Broken Algorithm](crypto_300_-_broken_algorithm.md)
 * [Misc](misc.md)
    * [Misc 50 - LOLCODE](misc_50_-_lolcode.md)
    * [Misc 50 - Digicode](misc_50_-_digicode.md)
