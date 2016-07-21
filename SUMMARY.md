@@ -12,4 +12,5 @@
    * [Web 200 - Glob Secret Manager](web_200_-_glob_secret_manager.md)
 * [Crypto](crypto.md)
 * [Misc](misc.md)
+   * Misc 50 - LOLCODE
 
