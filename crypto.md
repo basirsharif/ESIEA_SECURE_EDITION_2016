@@ -3,11 +3,15 @@
 L’épreuve contenait un fichier texte et un script python qui a servi à le chiffrer. On parcourt le script
 pour identifier la méthode de chiffrement ci-dessous :
 
-```def crypt(P):
-C = []
-for p in P:
-C.append( chr((42*ord(p) + 18)%127) )
-return ''.join(C)```
+> def crypt(P):
+> 
+> C = []
+> 
+>for p in P:
+>
+>C.append( chr((42*ord(p) + 18)%127) )
+>
+> return ''.join(C)```
 
 La première solution consiste à utiliser le théorme d’Euclide et Bézout:
 f(x) = 42x + 18[127]
@@ -20,10 +24,14 @@ Finalement g(x) = -3*x + 54[127]
 
 On peut aussi tenter une approche plus informatique que mathématique, celle-ci consiste à générer une  table de correspondance pour chaque caractère dans un charset.
 
-```def gen_crypt_table():
-C = []
-for i in range(255):
-C.append(chr((42*i + 18)%127))
-return C```
+>def gen_crypt_table():
+>
+>C = []
+>
+>for i in range(255):
+>
+> C.append(chr((42*i + 18)%127))
+>
+>return C
 
 L’exécution de ce code nous ressort le flag **ESE{EuclideWasAGoodMan}**
