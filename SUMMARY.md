@@ -13,4 +13,5 @@
 * [Crypto](crypto.md)
 * [Misc](misc.md)
    * [Misc 50 - LOLCODE](misc_50_-_lolcode.md)
+   * Misc 50 - Digicode
 
