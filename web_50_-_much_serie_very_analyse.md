@@ -1,4 +1,4 @@
-# WEB 50 - Much Serie Very Analyse
+# Web 50 - Much Serie Very Analyse
 
 
 Un challenge très simple, en regardant la source disponible nous voyons qu’un cookie lang est désérialisé.
