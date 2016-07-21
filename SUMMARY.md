@@ -15,7 +15,7 @@
    * [Web 150 - La route est longue](web_150_-_la_route_est_longue.md)
    * [Web 200 - Glob Secret Manager](web_200_-_glob_secret_manager.md)
 * [Crypto](crypto.md)
-   * Crypto 50 - Crypto Troll
+   * [Crypto 50 - Crypto Troll](crypto_50_-_crypto_troll.md)
 * [Misc](misc.md)
    * [Misc 50 - LOLCODE](misc_50_-_lolcode.md)
    * [Misc 50 - Digicode](misc_50_-_digicode.md)
