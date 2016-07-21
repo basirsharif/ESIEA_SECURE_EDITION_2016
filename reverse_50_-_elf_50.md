@@ -56,13 +56,8 @@ On va poser un breakpoint sur l’instruction test (main+114)
 Nous regardons les registres rdi et rsi qui sont utilisés lors de la comparaison et nous les affichons.
 Une autre méthode consistait à utiliser ltrace pour déterminer les arguments dans la fonction de comparaison strcmp.
 
-
 > $ ltrace ./ELF\ 50 le_flag_est_la
 __libc_start_main(0x400596, 2, 0x7ffd46bb8318, 0x400650 <unfinished ...>
 strcmp("le_flag_est_la", "ese{wh@t_is_the_re@l_fl@g?}")
-puts("nooo"nooo
-)
-=5
-+++ exited (status 0) +++
 
 Et hop on récupère le flag **ese{wh@t_is_the_re@l_fl@g?}**
