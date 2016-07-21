@@ -45,9 +45,7 @@ machines hébergeant les challenges.
 >
 >+----+----------+------------------------+
 >
->| id | username | password
->
->|
+>| id | username | password|
 >
 >+----+----------+------------------------+
 >
