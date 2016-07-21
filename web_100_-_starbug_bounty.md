@@ -25,6 +25,8 @@ Nous sommes connectés sur l’interface et nous pouvons donc utiliser le flag q
 **ese{Auth_SqL_1s_s0000_w34k}**
 
 
+
+
 Il était aussi possible d’utiliser SQLMap pour extraire le contenu de la base de données et ensuite se
 connecter avec les identifiants récupérés.
 > python
