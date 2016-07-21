@@ -34,8 +34,6 @@ chacun d’entre eux). Le payload pour se connecter en tant que user2 est le sui
 
 On accède à un formulaire nous permettant de transférer de l’argent.
 
-TODO Figure 20 - Visualisation de FlagShop
-
 
 Afin d’éviter que les participants du CTF ne vide tous les comptes des users, ceux-ci ne possèdent pas
 assez pour acheter un flag. Il devient assez évident qu’il faut trouver un autre moyen, il n’est
