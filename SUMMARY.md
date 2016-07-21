@@ -16,4 +16,5 @@
    * [Misc 50 - Digicode](misc_50_-_digicode.md)
    * [Misc 100 - PDF](misc_100_-_pdf.md)
    * [Misc 150 - Wow Stegano](misc_150_-_wow_stegano.md)
+   * Misc 250 - Outsmarter Filter
 
