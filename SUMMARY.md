@@ -15,5 +15,5 @@
    * [Misc 50 - LOLCODE](misc_50_-_lolcode.md)
    * [Misc 50 - Digicode](misc_50_-_digicode.md)
    * [Misc 100 - PDF](misc_100_-_pdf.md)
-   * Misc 150 - Wow Stegano
+   * [Misc 150 - Wow Stegano](misc_150_-_wow_stegano.md)
 
