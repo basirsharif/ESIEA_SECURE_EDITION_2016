@@ -5,7 +5,7 @@
 * [Web Application](web_application.md)
    * [Web 50 - Much Serie Very Analyse](web_50_-_much_serie_very_analyse.md)
    * [Web 50 - FlagShop](web_50_-_flagshop.md)
-   * [Web 100 - Super Query Login](web_100_-_super_query_login.md)
+   * [Web 100 - Super Query Login v2](web_100_-_super_query_login.md)
    * [Web 100 - Starbug Bounty](web_100_-_starbug_bounty.md)
 * Web 100 - Super Query Login
 * [Crypto](crypto.md)
