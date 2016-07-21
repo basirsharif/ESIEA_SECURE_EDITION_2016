@@ -9,7 +9,7 @@
    * [Web 100 - Starbug Bounty](web_100_-_starbug_bounty.md)
    * [Web 100 - Super Query Login v2](web_100_-_super_query_login_v2.md)
    * [Web 150 - La route est longue](web_150_-_la_route_est_longue.md)
-* Web 100 - Super Query Login
+* [Web 100 - Super Query Login](web_100_-_super_query_logizn.md)
 * [Crypto](crypto.md)
 * [Misc](misc.md)
 
