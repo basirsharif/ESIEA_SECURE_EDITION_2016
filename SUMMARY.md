@@ -17,4 +17,5 @@
    * [Misc 100 - PDF](misc_100_-_pdf.md)
    * [Misc 150 - Wow Stegano](misc_150_-_wow_stegano.md)
    * [Misc 250 - Outsmarter Filter](misc_250_-_outsmarter_filter.md)
+   * Misc 300 - Stolen Data
 
