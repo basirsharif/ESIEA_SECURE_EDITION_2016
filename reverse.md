@@ -1,3 +1,0 @@
-# ESE CTF - Reverse
-
-
