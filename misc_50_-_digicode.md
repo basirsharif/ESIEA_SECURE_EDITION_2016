@@ -41,6 +41,20 @@ possibilité de “double” md5 sur 6 caractères provenant du charset (ABC1234
     print ele
     break
 
-
-
 Code source de sol.py
+
+Cette solution ne prend pas plus de 2 secondes pour trouver la bonne combinaison.
+
+> $ time python sol.py
+48A5C4
+>
+> real 0m1.885s
+> 
+> user 0m1.663s
+> 
+> sys 0m0.012s
+
+
+Certains participants ont aussi utilisé des outils en ligne pour trouver une correspondance au hash, le
+site “hashkiller.com” faisait très bien la tâche.
+**2f17754f50920de30b06d28de6893fcc** md5(md5($pass)) : **48A5C4**
