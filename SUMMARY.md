@@ -19,6 +19,7 @@
    * [Crypto 50 - Simple XOR](crypto_50_-_simple_xor.md)
    * [Crypto 100 - Euclide](crypto_100_-_euclide.md)
    * [Crypto 100 - Chain Reaction](crypto_100_-_chain_reaction.md)
+   * Crypto 150 - Weird Cipher
 * [Misc](misc.md)
    * [Misc 50 - LOLCODE](misc_50_-_lolcode.md)
    * [Misc 50 - Digicode](misc_50_-_digicode.md)
