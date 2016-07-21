@@ -38,7 +38,8 @@ sqlmap.py
 En fournissant les bonnes options à SQLmap telles que le type de base de données, ici SQLITE, on peut
 détecter une injection SQL de type UNION. Avec l’option “dump”, l’outil va automatiquement récupérer
 toute la base de données.
-Attention : SQLMap est un outil assez intrusif, à la fin du CTF nous avions plus de 10 GO de logs sur la
+
+**Attention** : SQLMap est un outil assez intrusif, à la fin du CTF nous avions plus de 10 GO de logs sur la
 machines hébergeant les challenges.
 
 >Database: SQLite_masterdb
