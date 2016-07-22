@@ -57,7 +57,7 @@ Cependant la variable $login est aussi passée dans la fonction stripslashes() q
 les back slashes. 
 Il nous suffit d’injecter comme ceci: \ \ ce qui nous donnera:
 ```sql
-SELECT * FROM chall1_users WHERE login = '\\\ ' AND password = 'toto'
+SELECT * FROM chall1_users WHERE login = '\\\' AND password = 'toto'
 ```
 
 L’injection finale pour se connecter est la suivante.
