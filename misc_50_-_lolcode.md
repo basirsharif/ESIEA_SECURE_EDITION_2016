@@ -20,13 +20,15 @@ FLAG.
 
 
 > swissky@crashlab:~$ echo "VISIBLE FLAG" | nc 90.2.131.77 4242
+
+```lolcode
 HAI
 CAN HAS STDIO?
 IM IN YR 2016
 BTW ESE IZ FUN
 ese{much_lolc0de_so_flag}
 IM OUTTA YR 2016
-KTHXBYE
+KTHXBYE```
 
 
 On récupère ainsi le flag **ese{much_lolc0de_so_flag}**
