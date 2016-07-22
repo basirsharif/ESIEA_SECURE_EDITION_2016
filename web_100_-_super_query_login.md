@@ -52,7 +52,7 @@ La requête SQL [3] devient alors:
 ```sql
 SELECT * FROM chall1_users WHERE login = '\' AND password = 'toto'
 ```
-En vert la partie qui sera interprétée comme le login et en rouge notre champ d’exploitation.
+En vert la partie qui sera interprétée comme le login et le reste notre champ d’exploitation.
 Cependant la variable $login est aussi passée dans la fonction stripslashes() qui a pour effet d’échapper
 les back slashes. 
 Il nous suffit d’injecter comme ceci: \ \ ce qui nous donnera:
