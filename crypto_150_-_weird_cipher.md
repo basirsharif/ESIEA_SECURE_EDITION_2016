@@ -1,7 +1,7 @@
 # Crypto 150 - Weird Cipher
 
 Ce chiffrement XOR prend en paramètre un texte et une clef donnée par l’utilisateur.
-```
+```python
 def enc(msg, key):
 C = []
 for i in xrange(len(msg)):
@@ -19,7 +19,7 @@ Nous ne disposons pas de la clef mais on a une petite idée du contenu du fichie
 est .html.enc donc il commence probablement par “<html>”. On tatonne en xorant avec “<html>” afin
 de retrouver la clef, cela nous ressort "p@qR5sC", ce qui nous permet de déchiffrer le fichier.
 
-```
+```python
 with open("index.html.enc",'r') as f:
 C = f.readlines()
 C = "".join(C)
