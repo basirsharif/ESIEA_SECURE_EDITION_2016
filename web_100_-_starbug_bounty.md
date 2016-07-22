@@ -9,16 +9,12 @@ payload suivant.
 En injectant le payload dans le champ “username” de la requête 1 la condition devient vraie et le reste de
 la requête est ignorée car elle est précédée d’un commentaire.
 
->1 - $stmt = $pdo->query("SELECT
-password='".$_POST['password']."'");
-*
-FROM
-users
-WHERE
-username='".$_POST['username']."'
-and
+```php
+1 - $stmt = $pdo->query("SELECT password='".$_POST['password']."'");
 
-> 2 - $stmt = $pdo->query("SELECT * FROM users WHERE username='' or 1<2 --' and password='".$_POST['password']."'");
+* FROM users WHERE username='".$_POST['username']."' and
+
+2 - $stmt = $pdo->query("SELECT * FROM users WHERE username='' or 1<2 --' and password='".$_POST['password']."'");```
 
 
 Nous sommes connectés sur l’interface et nous pouvons donc utiliser le flag qui nous est donné :
