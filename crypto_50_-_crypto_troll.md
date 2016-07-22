@@ -19,10 +19,10 @@ Après une petite recherche sur le rot13 on apprend que c'est un césar avec un 
 Le chiffrement César est un simple décalage dans l'alphabet si on décale la lettre A de 13 places on
 
 obtient un N, comme le montre le code python ci-dessous :
-> print chr(ord('A')+13)
-> 
-> N
-
+```python
+print chr(ord('A')+13)
+N
+```
 L'alphabet n'étant composé que de 26 lettres, un déplacement de 13 places suivi par un second de 13
 places nous ferait arriver au même point:
 
