@@ -3,12 +3,11 @@
 De nombreux participants pensaient acheter des flags pour monter plus vite dans le classement, mais ils
 ont vite été ralenti par l’authentification requise dans ce challenge. Le code SQL ci-dessous contient la
 requête effectuée pour les authentifier.
-
-
-> $req = $DB->prepare("SELECT * FROM users WHERE (username=:username AND password='".str_replace(';', '[REMOVED]',
+```
+$req = $DB->prepare("SELECT * FROM users WHERE (username=:username AND password='".str_replace(';', '[REMOVED]',
 $_POST['password'])."')");
 
->$req->execute(array("username" => $_POST['username'] ));
+$req->execute(array("username" => $_POST['username'] ));```
 
 
 
@@ -56,17 +55,18 @@ local mais nous l’avons bloqué dans ce challenge pour éviter d’afficher de
 configuration du serveur. En revanche on peut essayer un die afin de stopper le flux d’exécution de PHP.
 
 
-> if(isset($_GET['do']) && isset($_GET['to'])){
+```
+if(isset($_GET['do']) && isset($_GET['to'])){
 if(giveMoney($_GET['to']) === true){
 
->\# Display XXX money envoyé or execute a single function ?
+# Display XXX money envoyé or execute a single function ?
 $do = $_GET["do"];
 
->$do();
-\# Remove money
+$do();
+# Remove money
 removeMoney();
 }
-}
+}```
 
 
 La fonction die() est exécutée grâce à la magie de PHP, notons qu’une fonction inexistante telle que
