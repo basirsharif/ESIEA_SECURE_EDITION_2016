@@ -1,8 +1,8 @@
 # Web 100 - Super Query Login v2
 
 Une nouvelle épreuve avec une injection SQL, la source du challenge est disponible:
-
-> <!DOCTYPE html>
+```php
+<!DOCTYPE html>
 <html>
 <head>
 <title>SQLi</title>
@@ -19,10 +19,10 @@ if (isset($_POST['login']) && isset($_POST['password'])) {
 require('config.php');
 $login = stripslashes(htmlentities($_POST['login'], ENT_QUOTES)); **[1]**
 
-> $pass = stripslashes(htmlentities($_POST['password'], ENT_QUOTES)); **[2]**
+$pass = stripslashes(htmlentities($_POST['password'], ENT_QUOTES)); **[2]**
 
 
-> $sql = "SELECT * FROM web1_users WHERE login = '" . $login . "' AND password = '" . $pass . "' ";** [3]**
+$sql = "SELECT * FROM web1_users WHERE login = '" . $login . "' AND password = '" . $pass . "' ";** [3]**
 $result = mysql_query($sql) or die(mysql_error());
 if( mysql_num_rows($result) == 1) {
 $data = mysql_fetch_array($result);
@@ -34,7 +34,7 @@ echo "<b>Wrong login/password !</b>";
 }
 ?>
 </body>
-</html>
+</html>```
 
 
 En [1] et [2] on a la fonction htmlentities($var, ENT_QUOTES) qui échappe les quotes (‘) et les
