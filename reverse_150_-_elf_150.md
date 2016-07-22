@@ -2,14 +2,19 @@
 
 On ouvre le challenge dans gdb : gdb -q elf150
 Si on tape disass main on remarque qu'il n'y a pas de symboles. Il faut donc retrouver le main. 
-Si l'on tape **info file** on obtient le point d'entrée : 0x80483e0
-On peut observer les premières lignes de l'éxecutable avec x/30i 0x80483e0
-On remarque que __libc_start_main est appelé avec comme dernier argument 0x80485cb
 
-On observe donc les instructions situées à cette adresse : x/30i 0x80485cb
-Dans ces trente premières lignes on peut voir des appels à ptrace et puts, c'est donc probablement l'adresse du main. Pour ne pas avoir à refaire toute cette gymnastique on fixe un breakpoint à l'entrée du programme utile : b* 0x80485cb
+Si l'on tape **info file** on obtient le point d'entrée : **0x80483e0**
+On peut observer les premières lignes de l'éxecutable avec **x/30i 0x80483e0**
+On remarque que __libc_start_main est appelé avec comme dernier argument **0x80485cb**
 
-On lance le programme. Une fois que le programme s'arrête on veut pouvoir observer le main dans sa totalité. On demande donc au débuggeur d'afficher un grand nombre d'instruction à partir de notre position actuelle : x/120i $pc
+On observe donc les instructions situées à cette adresse : 
+>x/30i 0x80485cb
+
+Dans ces trente premières lignes on peut voir des appels à ptrace et puts, c'est donc probablement l'adresse du main. Pour ne pas avoir à refaire toute cette gymnastique on fixe un breakpoint à l'entrée du programme utile : 
+>b* 0x80485cb
+
+On lance le programme. Une fois que le programme s'arrête on veut pouvoir observer le main dans sa totalité. On demande donc au débuggeur d'afficher un grand nombre d'instruction à partir de notre position actuelle : 
+>x/120i $pc
 
 On peut remarquer, entre autres :
 - Le programme appelle ptrace
