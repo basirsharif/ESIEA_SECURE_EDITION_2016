@@ -42,8 +42,14 @@ Des 0 et 1 apparaissent dans des commentaires JS, on les concatène pour obtenir
 Cela nous donne un code Javascript, on l’execute dans une console JS.
 
 
-> var a='es';var b='e{E1f';var c='f3l_T'; var d='ow3r_@'; var e='t_3AM}
-console.log(a+b+c+d+e)
+```js
+var a='es';
+var b='e{E1f';
+var c='f3l_T'; 
+var d='ow3r_@'; 
+var e='t_3AM}
+console.log(a+b+c+d+e);
+```
 
 
 
