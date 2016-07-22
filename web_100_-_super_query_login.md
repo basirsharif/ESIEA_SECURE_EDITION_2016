@@ -1,4 +1,4 @@
-# Web 100 - Super Query Login v2
+# Web 100 - Super Query Login v1
 
 Une nouvelle épreuve avec une injection SQL, la source du challenge est disponible:
 ```php
