@@ -38,7 +38,8 @@ glob:// — Trouve des noms de fichiers correspondant à un masque donné
 Le wrapper glob paraît très intéressant, l’exemple ci-dessous provient de la doc.
 
 
-> $it = new DirectoryIterator("glob://ext/spl/examples/*.php");
+```php 
+$it = new DirectoryIterator("glob://ext/spl/examples/*.php"); ```
 
 
 On applique le wrapper dans notre url pour lister tous les fichiers de secret.
