@@ -3,8 +3,8 @@
 L'énonce nous indique que nous devons réaliser une RCE pour
 valider l'épreuve mais qu'un filtre est présent. Le filtre recherche :
 - Texte de moins de 42 caractères
-- Banissement des mots clefs : eval shell exec popen php
-- Banissement des opérateurs : ? et ; et $
+- Bannissement des mots clefs : eval shell exec popen php
+- Bannissement des opérateurs : ? et ; et $
 
 On va essayer d'injecter du code PHP pour faire notre RCE, nous
 testons un simple :
