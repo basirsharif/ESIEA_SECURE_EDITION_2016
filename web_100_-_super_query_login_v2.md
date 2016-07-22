@@ -1,4 +1,4 @@
-# Web 100 - Super Query Login v1
+# Web 100 - Super Query Login v2
 
 La suite d’une série d’injection SQL avec un champ de connexion. On se connecte avec une injection
 classique:
