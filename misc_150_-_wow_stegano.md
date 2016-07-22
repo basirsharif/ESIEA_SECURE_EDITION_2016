@@ -12,5 +12,7 @@ On lance stegsolve pour mettre en évidence d’éventuelles informations dans l
 
 En parcourant les différentes frames on découvre un QrCode dans la couche Alpha.
 
+![](Capture d'écran de 2016-07-22 21-59-22.png)
+
 On obtient le flag en le décodant avec un smartphone ou sur des sites spécialisés :
 **ese{St1ll_LSB_1n_2k16}**
