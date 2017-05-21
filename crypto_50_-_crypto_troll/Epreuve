@@ -1,0 +1,6 @@
+Message: ABACBCBABCBACBACBCABCABCBACBBBBAA
+Le message ci-dessus a été chiffré avec cet algo:
+0x42 ^ rot13(cesar-crypt(msg[i], 13)) ^ 0x42
+
+Pouvez-vous le déchiffrer ?
+( Indice: Entrez le flag sous la forme ese{message_dechiffré} )
