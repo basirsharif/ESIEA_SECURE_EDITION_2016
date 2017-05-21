@@ -1,2 +1,0 @@
-# ESE CTF - Web Application
-

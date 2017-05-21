@@ -1,0 +1,5 @@
+<Files "f7f3e12a3e0b43d6421c9fc3d775058f.sqlite">
+Order Allow,Deny
+Deny from all
+</Files>
+php_value open_basedir "/var/www/crashlab.org/ese/ctf/web/web6/"

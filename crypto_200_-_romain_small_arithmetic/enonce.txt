@@ -1,0 +1,10 @@
+Vous avez été solicité pour un audit d'un site web.
+Un de vos collegues a réussi à récupérer le mot de passe de l'admin à l'aide d'une injection sql.
+Celle-ci ayant permis de récupérer une clef publique dans la foulée.
+
+Votre mission est de trouver le clair correspondant:
+
+D+69fRHNs+jIsfYM+tkQ5pkp232NfGz52/3wcwesEGsfB39VdQiS8nRdYX0anRcnEnaBTUaXO99ICqHZYl1aUamf3cpFSLBgvdewXTFl
+
+
+PS: la clef publique: pub.pem

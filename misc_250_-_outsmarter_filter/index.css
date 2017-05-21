@@ -1,0 +1,46 @@
+body{
+	width: 500px;
+	display: block;
+	margin: 0 auto;
+	background-color: #D1CDCD;
+	font-family: arial;
+}
+
+form{
+	width: 400px;
+	display: block;
+	margin: 0 auto;
+}
+
+body h1{
+	text-align: center;
+}
+
+#btn{
+	padding: 8px;
+	width: 150px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+textarea{
+	width: 400px;
+	height: 100px;
+	display: block;
+	background-color: #A29595;
+	outline:0;
+	border: 1px solid black;
+	padding: 8px;
+	color: white;
+}
+
+input{
+	padding: 8px;
+}
+
+footer{
+	text-align: center;
+	margin-top: 10px;
+	font-size: xx-small;
+}

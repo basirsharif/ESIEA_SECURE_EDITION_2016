@@ -1,0 +1,148 @@
+body {
+  font-family: 'Open Sans';
+  background-color: #50055D;
+}
+
+h1{
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 3em;
+}
+#login{
+	margin: 0 auto;
+	width: 400px;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	text-align: center;
+}
+#login-submit{
+	width: 100%;
+	outline: 0;
+	border: 0;
+	background-color: #900886;
+	color: #FFFFFF;
+	font-size: 1.5em;
+	border-radius: 0 0 10px 10px;
+	height: 60px;
+}
+
+#login-name,#login-pass{
+	vertical-align: top;
+	width: 90%;
+	height: 100%;
+	font-size: 1em;
+	margin-top: -3px;
+	border:0;
+	outline:0;
+	border-left: 1px solid grey;
+	padding-left: 3px;
+}
+
+#login-submit:hover{
+	background-color: #FFA300;
+	cursor: pointer;
+}
+
+#wrapper-box{
+	overflow: hidden;
+	border: 1px solid #858282;
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	height: 30px;
+	padding: 5px;
+	padding-left: 10px;
+}
+
+#login-image{
+	margin: 3px;
+	display: inline-block;
+	margin-top: 5px;
+	margin-left: -10px;
+}
+
+/* ribbon style */
+.h2 h2 {
+  color: #fff;
+  font-size: 1.2em;
+  padding: 7px 9px 5px 27px;
+  font-weight: 300;
+}
+ .h2.ribbon-wrapper {
+	position: relative;
+	margin-bottom: 50px;
+}
+ .h2 .ribbon-front {
+	background-color: #ffa300;
+	height: 43px;
+	width: 145px;
+	position: relative;
+	left:-10px;
+	z-index: 2;
+	top: 22px;
+}
+
+ .h2 .ribbon-edge-topleft,
+ .h2 .ribbon-edge-topright,
+ .h2 .ribbon-edge-bottomleft,
+ .h2 .ribbon-edge-bottomright {
+	position: absolute;
+	z-index: 1;
+	border-style:solid;
+	height:0px;
+	width:0px;
+}
+
+ .h2 .ribbon-edge-topleft,
+ .h2 .ribbon-edge-topright {
+}
+
+ .h2 .ribbon-edge-bottomleft,
+ .h2 .ribbon-edge-bottomright {
+	top:65px;
+}
+
+ .h2 .ribbon-edge-topleft,
+ .h2 .ribbon-edge-bottomleft {
+	left: -10px;
+	border-color: transparent #e17e02 transparent transparent;
+}
+
+ .h2 .ribbon-edge-topleft {
+	top: -0px;
+	border-width: 0px 10px 0 0;
+}
+ .h2 .ribbon-edge-bottomleft {
+	  border-width: 0 10px 15px 0;
+}
+
+ .h2 .ribbon-edge-topright,
+ .h2 .ribbon-edge-bottomright {
+	left: 180px;
+	border-color: transparent transparent transparent #e17e02;
+}
+
+ .h2 .ribbon-edge-topright {
+	top: -0px;
+	border-width: 0px 0 0 0px;
+}
+ .h2 .ribbon-edge-bottomright {
+	border-width: 0 0 0px 0px;
+}
+.ribbon-edge-topleft2 {
+  position: absolute;
+  z-index: 1;
+  border-style: solid;
+  height: 0px;
+  width: 0px;
+}
+.ribbon-edge-topleft2 {
+   left: 135px;
+  border-color: transparent #ffa300 transparent transparent;
+}
+.ribbon-edge-topleft2 {
+  top: 22px;
+  border-width: 22px 20px 21px 37px;
+  transform: rotate(-180deg);
+  border-radius: 1px;
+}
