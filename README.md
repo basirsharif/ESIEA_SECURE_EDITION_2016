@@ -1,9 +1,6 @@
 # ESE CTF
 
 Write up officiel du CTF.   
-[Version Web](https://swisskyrepo.gitbooks.io/ese_ctf_write_up/content/)    
-[Version PDF](https://www.gitbook.com/download/pdf/book/swisskyrepo/ese_ctf_write_up)   
-
 
 Plus d'informations sur la journée [Article ESIEA](https://www.esiea.fr/esiea-secure-edition-2017/)
 :)
